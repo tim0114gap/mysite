@@ -1,0 +1,29 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+{% block content %}
+<body id="index">
+<header>
+	<div class="logo">
+		<a href="{% url 'blog:index' %}"><img src="{% static 'blog/images/logo.png' %}" alt="TIM"></a>
+	</div>
+	<nav>
+		<ul class="global-nav">
+			<li><a href="{% url 'blog:work' %}">Work</a></li>
+			<li><a href="{% url 'blog:profile' %}">Profile</a></li>
+			<li><a href="{% url 'blog:blog' %}">Blog</a></li>
+		</ul>
+	</nav>
+</header>
+	<div id="wrap">
+		<div class="content">
+			<h1>Try Everything</h1>
+			<p>This site is portfolio of Munesato Tanaka</p>
+			<p class="btn"><a href="{% url 'blog:work' %}">Work</a></p>
+		</div>
+	</div>
+	<footer>
+		<small>(C)2019 TIM_Studio.</small>
+	</footer> 
+</body>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+<body id="work">
+<header>
+	<div class="logo">
+		<a href="{% url 'blog:index' %}"><img src="{% static 'blog/images/logo.png' %}" alt="TIM"></a>
+	</div>
+	<nav>
+		<ul class="global-nav">
+			<li><a href="{% url 'blog:work' %}">Work</a></li>
+			<li><a href="{% url 'blog:profile' %}">Profile</a></li>
+			<li><a href="{% url 'blog:blog' %}">Blog</a></li>
+		</ul>
+	</nav>
+</header>
+	<div id="wrap">
+		<div class="content">
+			<div class="main-center">
+				<section class="profile clearfix">
+					<div class="profile-txt">
+						<h1 class="icon">Work</h1>
+						<h3><p><span>DATA & NETWORK SCIENCE LAB</span><br></h3>
+						<b>DNetSCI Lab</b> focuses on uncovering and understanding nonlinear dynamics in complex systems in the real world, such as an event or information diffusion through online social media, infectious disease spread via domestic or international visitors and interdisciplinary knowledge transfer across diverse scholarly fields, based upon a wide spectrum of approaches in data and network science.
+						<a href="https://sites.google.com/site/minkyoungkimm/dnetsci-lab">More detail</a>
+					</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<small>(C)2019 Tanaka=studio.</small>
+	</footer>
+</body>
+{% endblock %}

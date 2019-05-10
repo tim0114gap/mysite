@@ -1,0 +1,45 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+<body id="blog">
+<header>
+	<div class="logo">
+		<a href="{% url 'blog:index' %}"><img src="{% static 'blog/images/logo.png' %}" alt="TIM"></a>
+	</div>
+	<nav>
+		<ul class="global-nav">
+			<li><a href="{% url 'blog:work' %}">Work</a></li>
+			<li><a href="{% url 'blog:profile' %}">Profile</a></li>
+			<li><a href="{% url 'blog:blog' %}">Blog</a></li>
+		</ul>
+	</nav>
+</header>
+	<div id="wrap">
+		<div class="content">
+			<div class="main-center">
+				<section class="profile clearfix">
+					<div class="profile-txt">
+						<h1 class="icon">BLOG</h1>
+						{% if latest_post %}
+						<div class="post-blog">
+							{% for post in latest_post %}
+							<h2><span>{{ post.title }}</span></h2><br>
+							<b>{{ post.pub_date }}</b><br>
+							<img src="{{ post.image.url }}" alt="blog-img" class="blog-image">
+							<p>{{ post.text }}</p>
+							{% endfor %}
+						</div>
+						{% else %}
+							<p>No blogs are available.</p>
+						{% endif %}
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<small>(C)2019 Tanaka=studio.</small>
+	</footer> 
+</body>
+{% endblock %}

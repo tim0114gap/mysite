@@ -1,0 +1,69 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+<body id="profile">
+<header>
+	<div class="logo">
+		<a href="{% url 'blog:index' %}"><img src="{% static 'blog/images/logo.png' %}" alt="TIM"></a>
+	</div>
+	<nav>
+		<ul class="global-nav">
+			<li><a href="{% url 'blog:work' %}">Work</a></li>
+			<li><a href="{% url 'blog:profile' %}">Profile</a></li>
+			<li><a href="{% url 'blog:blog' %}">Blog</a></li>
+		</ul>
+	</nav>
+</header>
+	<div id="wrap">
+		<div class="content">
+			<div class="main-center">
+				<section class="profile clearfix">
+					<div class="profile-txt">
+						<h1 class="icon">Profile</h1>
+						<h3><p><span>TANAKA MUNESATO</span><br></h3>
+						<b>・Addres</b><br>
+						Rep. of Korea, Chungcheongnam-do, Asan-si<br>
+						
+						<b>・Birthplace</b><br>
+						Japan, Chiba, Yachiyo-si<br>
+						
+						<b>・hobby</b><br>
+						Baseball, bass fishing, journey <br>
+						
+						<b>・Married status</b><br>
+						Married<br>
+						
+						<b>・age</b><br>
+						23 years old<br>
+						
+						<b>・Occupation</b><br>
+						University Student in Korea</p>
+					</div>
+					<img src="{% static 'blog/images/profile.png' %}" alt="田中宗賢profile" class="profile-image">
+				</section>
+				<section class="profile clearfix">
+					<div class="profile-txt">						                                                <h1 class="icon">Introduce</h1>
+						<p>I was immersed in baseball in my school days, but I had no idea what I want to do in the future, and I got a job after graduating from high school and went to work for a year and a half. I was forced by the urge to want to cross the country while I was doing the job, and I quit my job and experienced 3 months of studying abroad in the Philippines. I had a dream that I wanted to be a global person for the first time when I considered the experience of studying abroad and the direction of my life. I decided to study foreign languages, and I searched for a university where I can study abroad regularly at foreign universities, and now I enroll at the Language Institute of Korean Sunmoon University. I thought a language was mere tools and not skills during the term at the Language Institute, and I wanted to follow the trend. So, what was nice about me was software. After graduating from the Language Institute, I entered Sunmoon University Global Software Department and studying software development and data science (artificial intelligence). Now the future of the dream is to be able to solve the inconvenience of the world in the software and data science.</p>
+					</div>										                                </section>
+				<section class="profile clearfix">
+					<div class="profile-txt">
+						<h1 class="icon">My Studies</h1>
+						<p>Create a web framework used by Django and GWT tools.</p>
+						<p>The online study course in Data Science. (Numpy, Pandas, Series, etc.)</p>
+					</div>
+				</section>
+				<section class="profile clearfix">
+					<div class="profile-txt">
+						<h1 class="icon">Skills</h1>
+						<img src="{% static 'blog/images/skills.jpg' %}" alt="Skills" class="skills-images">
+					</div>
+				</section>
+				<b><a href="https://github.com/tim0114gap" class="profile-git">Go to github</a></b>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<small>(C)2019 Tanaka=studio.</small>
+	</footer> 
+</body>
+{% endblock %}
