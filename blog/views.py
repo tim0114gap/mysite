@@ -15,4 +15,4 @@ def profile(request):
 def blog(request):
     latest_post = Post.objects.order_by('-pub_date')[:5]
     context = {'latest_post':latest_post}
-    return render(request, 'blog/blog.html',context)
+    return render(request, '/blog/blog.html',context)
