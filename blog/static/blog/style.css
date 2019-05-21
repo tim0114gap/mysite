@@ -103,6 +103,19 @@ section {
 	padding-left: 150px;
 }
 
+#work .project th {
+	width: 240px;
+	background-color: #f0f0f0;
+	padding: 12px 0;
+	border: 1px solid #cccccc;
+}
+
+#work .project td {
+	width: 660px;
+	padding: 12px 40px;
+	border: 1px solid #cccccc;
+}
+
 table {
 	border-spacing: 0;
 	border-collapse: collapse;
