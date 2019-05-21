@@ -11,6 +11,7 @@
 		<ul class="global-nav">
 			<li><a href="{% url 'blog:work' %}">Portforlio</a></li>
 			<li><a href="{% url 'blog:profile' %}">Profile</a></li>
+			<li><a href="{% url 'blog:contact' %}">Contact</a></li>
 			<li><a href="{% url 'blog:blog' %}">Blog</a></li>
 		</ul>
 	</nav>
@@ -25,7 +26,7 @@
 						<b>DNetSCI Lab</b> オンラインのソーシャルメディアを通じたイベントや情報の拡散、
 						国内外からの訪問者を介した感染症の拡散、さまざまな学問分野にわたる学際的な知識の移転など、
 						現実世界の複雑なシステムにおける非線形ダイナミクスの発見と理解データおよびネットワーク科学の研究<br>
-						<a href="https://sites.google.com/site/minkyoungkimm/dnetsci-lab">More detail</a>
+						<a href="https://sites.google.com/site/minkyoungkimm/dnetsci-lab" target="_blank">More detail</a>
 					</div>
 				</section>
 
@@ -35,7 +36,22 @@
 						<section class="project">
 							<table>
 								<tr>
-									<th>Stress Busters</th>
+									<th><h4 style="margin:auto;">Image</h4></th>
+									<td>
+										<h4 style="margin:auto;">Title</h4>
+								</td>
+								<td>
+									<h4 style="margin:auto;">Content</h4>
+								</td>
+								</tr>
+
+								<tr>
+									<th>
+										<img src="{% static 'blog/images/heartRateSample.png' %}" alt="田中宗賢profile">
+									</th>
+									<td class="title">
+										Stress Busters
+									</td>
 									<td>
 										<b>問題定義</b><br>
 										&ensp;ストレスを感じている現代社会でストレスを測定して解消まで導けるアプリは少ない<br>
@@ -51,52 +67,54 @@
 										<b>研究の必要性</b><br>
 										&ensp;音楽を通してストレスを解消させることができる<br>
 									</td>
-									<td>
-										<img src="{% static 'blog/images/heartRateSample.png' %}" alt="田中宗賢profile">
-									</td>
 								</tr>
+
 								<tr>
-									<th><h4><a href="https://github.com/ohshane71/SWAnalysisProject">LibraryManagementSystem</a></h4></th>
+									<th><img src="{% static 'blog/images/lbSystem.jpg' %}" alt="田中宗賢profile" style="height: 240px; width: 400px;"></th>
 									<td>
-										&ensp;図書館には名前があり、それぞれにタイトル、著者（複数可）、一意のカタログ番号（重複していない）
-									を持つ多数の書籍が保管されています。本にはボロウワーが登録されています。 ただし、各書籍取引は図書館員が記録しなければなりません。
-									また、新しい借り手を登録し、貸出可能な書 籍とすでに貸出中の書籍を、カタログ番号順に表示できるようにする
+										<h4><a href="https://github.com/ohshane71/SWAnalysisProject" target="_blank">LibraryManagementSystem</a>
 								</td>
 								<td>
-									<img src="{% static 'blog/images/lbSystem.jpg' %}" alt="田中宗賢profile" style="height: 240px; width: 400px;">
+									&ensp;図書館には名前があり、それぞれにタイトル、著者（複数可）、一意のカタログ番号（重複していない）
+								を持つ多数の書籍が保管されています。本にはボロウワーが登録されています。 ただし、各書籍取引は図書館員が記録しなければなりません。
+								また、新しい借り手を登録し、貸出可能な書 籍とすでに貸出中の書籍を、カタログ番号順に表示できるようにする
 								</td>
 								</tr>
+
 								<tr>
-									<th><h4><a href="https://github.com/tim0114gap/mysite">MyPortfolio</a></h4></th>
+									<th><img src="{% static 'blog/images/blog.jpg' %}" alt="田中宗賢profile" style="height: 240px; width: 400px;"></th>
 									<td>
-										<a href="http://tim0114gap.pythonanywhere.com/index/">tim0114gapHomepage</a><br>
-										&ensp;PythonのWeb frameworkであるDjangoで自分のポートフォリオを作成。
-										自分の自己紹介、今やっていること、スキル、資格、ブログを投稿できるようにしました。
+										<h4><a href="https://github.com/tim0114gap/mysite" target="_blank">MyPortfolio</a>
 								</td>
 								<td>
-									<img src="{% static 'blog/images/blog.jpg' %}" alt="田中宗賢profile" style="height: 240px; width: 400px;">
+									<a href="http://tim0114gap.pythonanywhere.com/index/" target="_blank">tim0114gapHomepage</a><br>
+									&ensp;PythonのWeb frameworkであるDjangoで自分のポートフォリオを作成。
+									自分の自己紹介、今やっていること、スキル、資格、ブログを投稿できるようにしました。
 								</td>
 								</tr>
+
 								<tr>
-									<th><h4><a href="https://github.com/tim0114gap/BookMark">BookMarkV2</a></h4></th>
+									<th><iframe style="float:right; height: 300px; width: 400px; margin-top: 30px;" src="https://www.youtube.com/embed/YVL4n8OGxl8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></th>
 									<td>
-										&ensp;GWT（Google Web Toolkit）で登録したブックマークのクリックした回数を実際にSQLで記録し、
-										多い順に左から自動整列をする機能と、ブックマークにカテゴリーという分野を設定し、
-										同じカテゴリー内で人気のあるブックマークのおすすめを表示する機能をモデリングしました。
+										<h4><a href="https://github.com/tim0114gap/BookMark" target="_blank">BookMarkV2</a></h4>
 								</td>
 								<td>
-									<iframe style="float:right; height: 300px; width: 400px; margin-top: 30px;" src="https://www.youtube.com/embed/YVL4n8OGxl8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									&ensp;GWT（Google Web Toolkit）で登録したブックマークのクリックした回数を実際にSQLで記録し、
+									多い順に左から自動整列をする機能と、ブックマークにカテゴリーという分野を設定し、
+									同じカテゴリー内で人気のあるブックマークのおすすめを表示する機能をモデリングしました。
 								</td>
 								</tr>
+
 								<tr>
-									<th><h4><a href="https://github.com/SunmoonCreators/want-to-be-a-bird">Want to be bird</a></h4></th>
+									<th><img src="{% static 'blog/images/oooojpg' %}" alt=" coming soon"></th>
 									<td>
-										&ensp;Coming soon~~~
+										<h4><a href="https://github.com/SunmoonCreators/want-to-be-a-bird" target="_blank">Want to be bird</a></h4>
 								</td>
 								<td>
-									<img src="{% static 'blog/images/oooojpg' %}" alt=" coming soon">
+									&ensp;Coming soon~~~
 								</td>
 								</tr>
+
 							</table>
 						</section>
 					</div>

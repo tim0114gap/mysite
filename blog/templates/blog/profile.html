@@ -10,6 +10,7 @@
 		<ul class="global-nav">
 			<li><a href="{% url 'blog:work' %}">Portforlio</a></li>
 			<li><a href="{% url 'blog:profile' %}">Profile</a></li>
+			<li><a href="{% url 'blog:contact' %}">Contact</a></li>
 			<li><a href="{% url 'blog:blog' %}">Blog</a></li>
 		</ul>
 	</nav>
@@ -34,7 +35,7 @@
 						23 years old<br>
 
 						<b>・Occupation</b><br>
-						University Student in Korea</p>
+						University Student in Rep of Korea</p>
 					</div>
 					<img src="{% static 'blog/images/profile.png' %}" alt="田中宗賢profile" class="profile-image">
 				</section>
@@ -44,6 +45,7 @@
 						<p>hogehoge</p>
 					</div>
 				</section>
+
 				<section class="career">
 					<h2 class="icon">Career and Job history</h2>
 					<table>
@@ -56,6 +58,10 @@
 							<td>千葉県立八千代東高等学校　入学</td>
 						</tr>
 						<tr>
+							<th>2014/03</th>
+							<td>千葉県立八千代東高等学校　卒業</td>
+						</tr>
+						<tr>
 							<th>2014/04</th>
 							<td>株式会社ナンバーワン　入社　（外回り営業）</td>
 						</tr>
@@ -65,11 +71,11 @@
 						</tr>
 						<tr>
 							<th>2015/09</th>
-							<td>フィリピンパインスクラークイングリッシュアカデミー　語学留学</td>
+							<td>フィリピン パインスクラーク イングリッシュアカデミー　語学留学</td>
 						</tr>
 						<tr>
 							<th>2015/12</th>
-							<td>フィリピンパインスクラークイングリッシュアカデミー　修了</td>
+							<td>フィリピン パインスクラーク イングリッシュアカデミー　修了</td>
 						</tr>
 						<tr>
 							<th>2016/02</th>
@@ -89,6 +95,35 @@
 						</tr>
 					</table>
 				</section>
+
+				<section class="career">
+					<h2 class="icon">Language Skills</h2>
+					<table>
+						<tr>
+							<th>日本語</th>
+							<td>ネイティブレベル</td>
+						</tr>
+						<tr>
+							<th>英語</th>
+							<td>会話レベル</td>
+						</tr>
+						<tr>
+							<th>その他言語</th>
+							<td>韓国語（ビジネスレベル）</td>
+						</tr>
+					</table>
+				</section>
+
+				<section class="career">
+					<h2 class="icon">Qualification</h2>
+					<table>
+						<tr>
+							<th>2018/12/20</th>
+							<td>韓国語能力試験(TOPIK) 6級</td>
+						</tr>
+					</table>
+				</section>
+
 				<section class="profile clearfix">
 					<div class="profile-txt">
 						<h1 class="icon">My Studies</h1>
@@ -102,7 +137,7 @@
 						<img src="{% static 'blog/images/skills.jpg' %}" alt="Skills" class="skills-images">
 					</div>
 				</section>
-				<b><a href="https://github.com/tim0114gap" class="profile-git">Go to github</a></b>
+				<b><a href="https://github.com/tim0114gap" target="_blank" class="profile-git">Go to github</a></b>
 			</div>
 		</div>
 	</div>

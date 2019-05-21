@@ -12,6 +12,9 @@ def work(request):
 def profile(request):
     return render(request, 'blog/profile.html')
 
+def contact(request):
+    return  render(request, 'blog/contact.html')
+
 def blog(request):
     latest_post = Post.objects.order_by('-pub_date')[:5]
     context = {'latest_post':latest_post}

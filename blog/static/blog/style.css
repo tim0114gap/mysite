@@ -112,13 +112,14 @@ section {
 
 .project td {
 	width: 660px;
+	text-align:center;
 	padding: 12px 40px;
 	border: 1px solid #cccccc;
 }
 
 .project img {
-	height: 300px;
-	width: 400px;
+	height: 200px;
+	width: 300px;
 	padding: 12px 40px;
 }
 
