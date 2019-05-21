@@ -1,0 +1,36 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+<body id="contact">
+<header>
+	<div class="logo">
+		<a href="{% url 'blog:index' %}"><img src="{% static 'blog/images/logo.png' %}" alt="TIM"></a>
+	</div>
+	<nav>
+		<ul class="global-nav">
+			<li><a href="{% url 'blog:work' %}">Portforlio</a></li>
+			<li><a href="{% url 'blog:profile' %}">Profile</a></li>
+      <li><a href="{% url 'blog:contact' %}">Contact</a></li>
+			<li><a href="{% url 'blog:blog' %}">Blog</a></li>
+		</ul>
+	</nav>
+</header>
+	<div id="wrap">
+		<div class="content">
+			<div class="main-center">
+				<section class="profile clearfix">
+					<div class="profile-txt">
+						<h1 class="icon">Contact</h1>
+						<h2 style="color: lightblue;">Gmail</h2>
+            <a href="mailto:tim.0114.gap@gmail.com">&emsp;Send Email ⇒</a>
+						<b>tim.0114.gap@gmail.com</b><br>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<small>(C)2019 Tanaka=studio.</small>
+	</footer>
+</body>
+{% endblock %}

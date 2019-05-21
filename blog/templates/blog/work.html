@@ -9,8 +9,9 @@
 	</div>
 	<nav>
 		<ul class="global-nav">
-			<li><a href="{% url 'blog:work' %}">Work</a></li>
+			<li><a href="{% url 'blog:work' %}">Portforlio</a></li>
 			<li><a href="{% url 'blog:profile' %}">Profile</a></li>
+			<li><a href="{% url 'blog:contact' %}">Contact</a></li>
 			<li><a href="{% url 'blog:blog' %}">Blog</a></li>
 		</ul>
 	</nav>
@@ -20,11 +21,104 @@
 			<div class="main-center">
 				<section class="profile clearfix">
 					<div class="profile-txt">
-						<h1 class="icon">Work</h1>
+						<h1 class="icon">Research Interest</h1>
 						<h3><p><span>DATA & NETWORK SCIENCE LAB</span><br></h3>
-						<b>DNetSCI Lab</b> focuses on uncovering and understanding nonlinear dynamics in complex systems in the real world, such as an event or information diffusion through online social media, infectious disease spread via domestic or international visitors and interdisciplinary knowledge transfer across diverse scholarly fields, based upon a wide spectrum of approaches in data and network science.
-						<a href="https://sites.google.com/site/minkyoungkimm/dnetsci-lab">More detail</a>
+						<b>DNetSCI Lab</b> オンラインのソーシャルメディアを通じたイベントや情報の拡散、
+						国内外からの訪問者を介した感染症の拡散、さまざまな学問分野にわたる学際的な知識の移転など、
+						現実世界の複雑なシステムにおける非線形ダイナミクスの発見と理解データおよびネットワーク科学の研究<br>
+						<a href="https://sites.google.com/site/minkyoungkimm/dnetsci-lab" target="_blank">More detail</a>
 					</div>
+				</section>
+
+				<section class="profile clearfix">
+					<div class="profile-txt">
+						<h1 class="icon">Selected Project</h1>
+						<section class="project">
+							<table>
+								<tr>
+									<th><h4 style="margin:auto;">Image</h4></th>
+									<td>
+										<h4 style="margin:auto;">Title</h4>
+								</td>
+								<td>
+									<h4 style="margin:auto;">Content</h4>
+								</td>
+								</tr>
+
+								<tr>
+									<th>
+										<img src="{% static 'blog/images/heartRateSample.png' %}" alt="田中宗賢profile">
+									</th>
+									<td class="title">
+										Stress Busters
+									</td>
+									<td>
+										<b>問題定義</b><br>
+										&ensp;ストレスを感じている現代社会でストレスを測定して解消まで導けるアプリは少ない<br>
+										<b>プロジェクト目標</b><br>
+										&ensp;問題を解消するアプリを作る<br>
+										<b>先行研究 </b><br>
+										&ensp;ストレス指数の計測法から0.0~2.0:正常、2.0~5.0:注意、5.0~警告を算出。<br>
+										音楽のストレス解消効果がある<br>
+										<b>研究内容</b><br>
+										&ensp;ストレス指数が高ければ本人が好きな音楽を自動で流す。<br>
+										<b>具現</b><br>
+										&ensp;pythonのパッケージpandas,Numpy,Matplotlib,scipy.signalを使用。実際に心拍間隔とストレス指数の摘出。（DATA：MIT-BIH Database Distribution(1996 researchers), Trekking(2015 Students), Skydiver(?))<br>
+										<b>研究の必要性</b><br>
+										&ensp;音楽を通してストレスを解消させることができる<br>
+									</td>
+								</tr>
+
+								<tr>
+									<th><img src="{% static 'blog/images/lbSystem.jpg' %}" alt="田中宗賢profile" style="height: 240px; width: 400px;"></th>
+									<td>
+										<h4><a href="https://github.com/ohshane71/SWAnalysisProject" target="_blank">LibraryManagementSystem</a>
+								</td>
+								<td>
+									&ensp;図書館には名前があり、それぞれにタイトル、著者（複数可）、一意のカタログ番号（重複していない）
+								を持つ多数の書籍が保管されています。本にはボロウワーが登録されています。 ただし、各書籍取引は図書館員が記録しなければなりません。
+								また、新しい借り手を登録し、貸出可能な書 籍とすでに貸出中の書籍を、カタログ番号順に表示できるようにする
+								</td>
+								</tr>
+
+								<tr>
+									<th><img src="{% static 'blog/images/blog.jpg' %}" alt="田中宗賢profile" style="height: 240px; width: 400px;"></th>
+									<td>
+										<h4><a href="https://github.com/tim0114gap/mysite" target="_blank">MyPortfolio</a>
+								</td>
+								<td>
+									<a href="http://tim0114gap.pythonanywhere.com/index/" target="_blank">tim0114gapHomepage</a><br>
+									&ensp;PythonのWeb frameworkであるDjangoで自分のポートフォリオを作成。
+									自分の自己紹介、今やっていること、スキル、資格、ブログを投稿できるようにしました。
+								</td>
+								</tr>
+
+								<tr>
+									<th><iframe style="float:right; height: 300px; width: 400px; margin-top: 30px;" src="https://www.youtube.com/embed/YVL4n8OGxl8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></th>
+									<td>
+										<h4><a href="https://github.com/tim0114gap/BookMark" target="_blank">BookMarkV2</a></h4>
+								</td>
+								<td>
+									&ensp;GWT（Google Web Toolkit）で登録したブックマークのクリックした回数を実際にSQLで記録し、
+									多い順に左から自動整列をする機能と、ブックマークにカテゴリーという分野を設定し、
+									同じカテゴリー内で人気のあるブックマークのおすすめを表示する機能をモデリングしました。
+								</td>
+								</tr>
+
+								<tr>
+									<th><img src="{% static 'blog/images/oooojpg' %}" alt=" coming soon"></th>
+									<td>
+										<h4><a href="https://github.com/SunmoonCreators/want-to-be-a-bird" target="_blank">Want to be bird</a></h4>
+								</td>
+								<td>
+									&ensp;Coming soon~~~
+								</td>
+								</tr>
+
+							</table>
+						</section>
+					</div>
+				</section>
 			</div>
 		</div>
 	</div>
