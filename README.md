@@ -19,4 +19,4 @@ None
 [tim0114gap](https://github.com/tim0114gap/)   
 
 # References
-[jango　Documentation](https://docs.djangoproject.com/en/2.2/)
+[Django Documentation](https://docs.djangoproject.com/en/2.2/)
