@@ -120,9 +120,12 @@ section {
 .project img {
 	height: 200px;
 	width: 300px;
-	padding: 12px 40px;
+	padding: 5px 40px;
 }
 
+#work b {
+	margin: 16px 2px;
+}
 
 
 table {
