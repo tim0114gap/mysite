@@ -103,18 +103,26 @@ section {
 	padding-left: 150px;
 }
 
-#work .project th {
+.project th {
 	width: 240px;
 	background-color: #f0f0f0;
-	padding: 12px 0;
+	padding: 12px 12px;
 	border: 1px solid #cccccc;
 }
 
-#work .project td {
+.project td {
 	width: 660px;
 	padding: 12px 40px;
 	border: 1px solid #cccccc;
 }
+
+.project img {
+	height: 300px;
+	width: 400px;
+	padding: 12px 40px;
+}
+
+
 
 table {
 	border-spacing: 0;
@@ -164,7 +172,7 @@ a:hover {
 
 header {
 	width: 960px;
-	height: 70px;
+	height: 10px;
 	margin: 0 auto;
 }
 
