@@ -1,5 +1,10 @@
-Django==2.2.1
+Django==2.1.7
+imageio==2.5.0
 Pillow==6.0.0
-pkg-resources==0.0.0
-pytz==2019.1
-sqlparse==0.3.0
+dj-database-url==0.4.2
+dj-static==0.0.6
+django-toolbelt==0.0.1
+gunicorn==19.7.1
+psycopg2==2.7.1
+pytz==2017.2
+static3==0.7.0
