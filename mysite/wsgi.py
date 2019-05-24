@@ -15,3 +15,11 @@ https://docs.djangoproject.com/en/2.1/howto/deployment/wsgi/
 #
 # application = get_wsgi_application()
 # application = DjangoWhiteNoise(application)
+
+
+import os
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mysite.settings")
+
+from django.core.wsgi import get_wsgi_application
+application = get_wsgi_application()
