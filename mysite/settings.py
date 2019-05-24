@@ -23,16 +23,16 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'sykb2)16%sr03yognc)%8a^gp0q)3h&+3dm7w6k8_svx@(vc+z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-try:
-    from .local_settings import *
-except ImportError:
-    pass
-
-# Debug=Falseの時だけ実行する設定
-if not DEBUG:
-    import django_heroku
-    django_heroku.settings(locals())
+DEBUG = True
+# try:
+#     from .local_settings import *
+# except ImportError:
+#     pass
+#
+# # Debug=Falseの時だけ実行する設定
+# if not DEBUG:
+#     import django_heroku
+#     django_heroku.settings(locals())
 ALLOWED_HOSTS = '*'
 
 
@@ -155,4 +155,4 @@ DATABASES = {
         default=config('DATABASE_URL')
             )
 }
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
