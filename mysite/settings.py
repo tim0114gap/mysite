@@ -22,13 +22,46 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = 'sykb2)16%sr03yognc)%8a^gp0q)3h&+3dm7w6k8_svx@(vc+z'
+SECRET_KEY = 'sykb2)16%sr03yognc)%8a^gp0q)3h&+3dm7w6k8_svx@(vc+z'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
-SECRET_KEY = config('SECRET_KEY')
-DEBUG = config('DEBUG', default=False, cast=bool)
-ALLOWED_HOSTS = '*'
+from socket import gethostname
+hostname = gethostname()
+
+if "COMPUTER-NAME" in hostname:
+    # デバッグ環境
+    DEBUG = True
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+    ALLOWED_HOSTS = [] # よくわからんけど、これも大事らしい
+else:
+    # 本番環境
+    DEBUG = False
+    LOGGING = {
+        'version': 1,
+        'disable_existing_loggers': False,
+        'handlers': {
+            'console': {
+                'class': 'logging.StreamHandler',
+            },
+        },
+        'loggers': {
+            'django': {
+                'handlers': ['console'],
+                'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
+            },
+        },
+    }
+
+import dj_database_url
+db_from_env = dj_database_url.config()
+DATABASES = {
+    'default': dj_database_url.config()
+}
+ALLOWED_HOSTS = ['*']
 
 
 
@@ -52,7 +85,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
@@ -82,8 +115,7 @@ TEMPLATES = [
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-#SECRET_KEY = config('SECRET_KEY')
-#DEBUG = config('DEBUG', default=False, cast=bool)
+
 DATABASES = {
     'default': dj_database_url.config(
         default=config('DATABASE_URL')
