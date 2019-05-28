@@ -278,7 +278,6 @@ footer small {
 }
 
 #profile {
-	background-image: url(../images/bg-about.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-attachment: fixed;
@@ -286,7 +285,6 @@ footer small {
 }
 
 #portfolio {
-	background-image: url(../images/bg-portfolio-sp.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-attachment: fixed;
