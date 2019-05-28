@@ -27,7 +27,7 @@ SECRET_KEY = 'sykb2)16%sr03yognc)%8a^gp0q)3h&+3dm7w6k8_svx@(vc+z'
 from socket import gethostname
 hostname = gethostname()
 
-if  'local' in hostname:
+if  '.localhost' in hostname:
     # デバッグ環境
     DEBUG = True
     DATABASES = {
