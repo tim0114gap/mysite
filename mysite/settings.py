@@ -27,7 +27,7 @@ SECRET_KEY = 'sykb2)16%sr03yognc)%8a^gp0q)3h&+3dm7w6k8_svx@(vc+z'
 from socket import gethostname
 hostname = gethostname()
 
-if  'localhost' == hostname or '127.0.0.1:8000' == hostname or '[::1]' == hostname:
+if  'local' in hostname:
     # デバッグ環境
     DEBUG = True
     DATABASES = {
@@ -56,12 +56,12 @@ else:
         },
     }
 
-import dj_database_url
-db_from_env = dj_database_url.config()
-DATABASES = {
-    'default': dj_database_url.config()
-}
-ALLOWED_HOSTS = ['*']
+    import dj_database_url
+    db_from_env = dj_database_url.config()
+    DATABASES = {
+        'default': dj_database_url.config()
+    }
+    ALLOWED_HOSTS = ['*']
 
 
 
