@@ -1,0 +1,292 @@
+{% load static %}
+
+@charset "utf-8";
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #cccccc;
+	color: #333333;
+	font-size: 15px;
+	line-height: 2;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+	margin-top: 0;
+}
+
+#index #wrap {
+	background-color: transparent;
+	margin-top: 0;
+}
+
+#index .content {
+	margin-top: 100px;
+	padding: 0 300px;
+}
+
+#index footer {
+	padding: 0 300px;
+}
+
+#index h1 {
+	font-size: 100px;
+	line-height: 1;
+	color: #ffffff;
+	font-family: 'Bitter', serif;
+	margin-bottom: 50px;
+	border: none;
+}
+
+#index p {
+	font-size: 21px;
+	color: #ffffff;
+}
+
+h1 {
+	font-family: 'Bitter', serif;
+	font-size: 36px;
+	border-bottom: 1px solid #cccccc;
+}
+
+h2 {
+	font-family: 'Bitter', serif;
+	font-size: 24px;
+}
+
+.icon:before {
+	content: "";
+	padding-right: 10px;
+	border-left: 7px solid #9cb4a4;
+}
+
+#profile .profile-txt {
+	width: 540px;
+	float: left;
+}
+
+#profile .profile-txt span {
+	font-weight: bold;
+}
+
+#profile .profile-image {
+	float: right;
+	height: 500px;
+	width: 400px;
+	padding-top: 75px;
+}
+
+.clearfix:after {
+	content:"";
+	display: block;
+	clear: both;
+}
+
+section {
+	margin-bottom: 35px;
+}
+
+#profile .career th {
+	width: 240px;
+	background-color: #f0f0f0;
+	padding: 12px 0;
+	border: 1px solid #cccccc;
+}
+
+#profile .career td {
+	width: 660px;
+	padding: 12px 40px;
+	border: 1px solid #cccccc;
+}
+
+#profile .profile-git {
+	padding-left: 150px;
+}
+
+.project th {
+	width: 240px;
+	background-color: #f0f0f0;
+	padding: 12px 12px;
+	border: 1px solid #cccccc;
+}
+
+.project td {
+	width: 660px;
+	text-align:center;
+	padding: 12px 40px;
+	border: 1px solid #cccccc;
+}
+
+.project img {
+	height: 200px;
+	width: 300px;
+	padding: 5px 40px;
+}
+
+#work b {
+	margin: 16px 2px;
+}
+
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+img {
+	vertical-align: bottom;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #3583aa;
+}
+
+a:visited {
+	color: #788d98;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.btn a {
+	background-color: #009cd3;
+	color: #ffffff;
+	font-size: 20px;
+	font-family: 'Bitter', serif;
+	width: 185px;
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 20px;
+	border-radius: 5px;
+	border: 3px solid #009cd3;
+}
+
+.btn a:hover {
+	text-decoration: none;
+	background-color: #ffffff;
+	color: #009cd3;
+}
+
+header {
+	width: 960px;
+	height: 10px;
+	margin: 0 auto;
+}
+
+.logo {
+	float: left;
+	margin-top: 50px;
+}
+
+.global-nav {
+	float: right;
+	margin-top: 60px;
+}
+
+.global-nav li {
+	float: left;
+	margin: 0 20px;
+	font-size: 30px;
+	list-style: none;
+	font-family: 'Bitter',serif;
+}
+
+.global-nav li a {
+	color: #ffffff;
+}
+
+.global-nav li a:hover {
+	border-bottom: 2px solid #ffffff;
+	padding-bottom: 2px;
+	text-decoration: none;
+}
+
+#wrap {
+	clear: both;
+	background-color: #ffffff;
+	margin-top: 220px;
+	padding: 35px 0;
+}
+
+.main-center {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.content {
+	width: 960;
+	margin: 0 auto;
+}
+
+.main {
+	width: 700px;
+	margin: 0 10px;
+	float: left;
+}
+
+.sidebar {
+	width: 200px;
+	margin: 0 10px 0 30px;
+	float: right;
+}
+
+#blog .blog-image {
+	height: 400px;
+	width: 500px;
+}
+
+#blog .post-blog {
+	text-align: center;
+}
+
+#blog p {
+	padding-top: 30px;
+	border-bottom: 1px solid #cccccc;
+}
+
+footer {
+	text-align: center;
+	color: #ffffff;
+	padding: 20px 0;
+	background-color: #767671;
+}
+
+footer small {
+	font-size: 12px;
+}
+
+#index footer {
+	width: 960px;
+	margin: 150 auto 0 auto;
+	text-align: left;
+	background-color: transparent;
+}
+
+#index {
+	background-image: url("images/indexTim1.87b27c871280.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#profile {
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+
+#portfolio {
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
