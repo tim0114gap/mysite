@@ -1,0 +1,87 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+<body id="work">
+<header>
+	<div class="logo">
+		<a href="{% url 'blogKr:index' %}"><img src="{% static 'blog/images/logo.png' %}" alt="TIM"></a>
+	</div>
+	<nav>
+		<ul class="global-nav">
+			<li><a href="{% url 'blogKr:work' %}">Hi</a></li>
+			<li><a href="{% url 'blogKr:profile' %}">Profile</a></li>
+			<li><a href="{% url 'blogKr:blog' %}">Blog</a></li>
+		</ul>
+	</nav>
+</header>
+	<div id="wrap">
+		<div class="content">
+			<div class="main-center">
+				<section class="profile clearfix">
+					<div class="profile-txt">
+						<h1 class="icon">Work</h1>
+						<h3><p><span>DATA & NETWORK SCIENCE LAB</span><br></h3>
+						<b>DNetSCI Lab</b> focuses on uncovering and understanding nonlinear dynamics in complex systems in the real world, such as an event or information diffusion through online social media, infectious disease spread via domestic or international visitors and interdisciplinary knowledge transfer across diverse scholarly fields, based upon a wide spectrum of approaches in data and network science.
+						<a href="https://sites.google.com/site/minkyoungkimm/dnetsci-lab">More detail</a>
+					</div>
+				</section>
+
+				<section class="profile clearfix">
+					<div class="profile-txt">
+						<h1 class="icon">Selected Project</h1>
+						<section class="project">
+							<table>
+								<tr>
+									<th><h4 style="margin:auto;">Title</h4></th>
+									<td>
+										<h4 style="margin:auto;">Content</h4>
+								</td>
+								</tr>
+
+								<tr>
+									<th>
+										<img src="{% static 'blog/images/heartRateSample.png' %}" alt="田中宗賢profile"　style="height: 240px; width: 400px;">
+										<br>
+										<h3><a href="https://github.com/tim0114gap/" target="_blank">Stress Busters</a></h3>
+									</th>
+									<td>
+										<b>問題定義</b><br>
+										&ensp;ストレスを感じている現代社会でストレスを測定して解消まで導けるアプリは少ない<br>
+										<b>プロジェクト目標</b><br>
+										&ensp;問題を解消するアプリを作る<br>
+										<b>先行研究 </b><br>
+										&ensp;ストレス指数の計測法から0.0~2.0:正常、2.0~5.0:注意、5.0~警告を算出。<br>
+										音楽のストレス解消効果がある<br>
+										<b>研究内容</b><br>
+										&ensp;ストレス指数が高ければ本人が好きな音楽を自動で流す。<br>
+										<b>具現</b><br>
+										&ensp;pythonのパッケージpandas,Numpy,Matplotlib,scipy.signalを使用。実際に心拍間隔とストレス指数の摘出。（DATA：MIT-BIH Database Distribution(1996 researchers), Trekking(2015 Students), Skydiver(?))<br>
+										<b>研究の必要性</b><br>
+										&ensp;音楽を通してストレスを解消させることができる<br>
+									</td>
+								</tr>
+
+								<tr>
+									<th><img src="{% static 'blog/images/lbSystem.jpg' %}" alt="田中宗賢profile" style="height: 240px; width: 400px;">
+										<br>
+										<h3><a href="https://github.com/ohshane71/SWAnalysisProject" target="_blank">LibraryManagementSystem</a></h3>
+									</th>
+								<td>
+									&ensp;図書館には名前があり、それぞれにタイトル、著者（複数可）、一意のカタログ番号（重複していない）
+								を持つ多数の書籍が保管されています。本にはボロウワーが登録されています。 ただし、各書籍取引は図書館員が記録しなければなりません。
+								また、新しい借り手を登録し、貸出可能な書 籍とすでに貸出中の書籍を、カタログ番号順に表示できるようにする
+								</td>
+								</tr>
+
+
+							</table>
+						</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<small>(C)2019 Tanaka=studio.</small>
+	</footer>
+</body>
+{% endblock %}
