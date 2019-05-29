@@ -1,5 +1,5 @@
 # MySite
-自分のポートフォリオ
+My Portfolio JP/KR/EN
 
 # Dependency
 bleach==3.1.0  
@@ -35,4 +35,6 @@ None
 [tim0114gap](https://github.com/tim0114gap/)   
 
 # References
-[Django Documentation](https://docs.djangoproject.com/en/2.2/)
+[Django Documentation](https://docs.djangoproject.com/en/2.2/)  
+[Django Girls](https://tutorial.djangogirls.org/en/)  
+[Heroku deploy](https://simpleisbetterthancomplex.com/tutorial/2016/08/09/how-to-deploy-django-applications-on-heroku.html)  
