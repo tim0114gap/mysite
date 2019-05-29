@@ -5,6 +5,7 @@
 body{
 	margin: 0;
 	padding: 0;
+	background-color: #cccccc;
 	color: #333333;
 	font-size: 15px;
 	line-height: 2;
@@ -212,7 +213,9 @@ header {
 	background-color: #ffffff;
 	margin-top: 220px;
 	padding: 35px 0;
+	width: 960px;
 }
+
 
 .main-center {
 	width: 940px;
@@ -220,7 +223,7 @@ header {
 }
 
 .content {
-	width: 960;
+	width: 960px;
 	margin: 0 auto;
 }
 
