@@ -4,8 +4,8 @@ from . import views
 
 app_name = 'blogKr'
 urlpatterns = [
-        path('index/' ,views.index ,name='index'),
-        path('work/' ,views.work ,name='work'),
-        path('profile/' ,views.profile ,name='profile'),
-        path('blog/' ,views.blog ,name='blog')
+        path('' ,views.indexKr ,name='indexKr'),
+        path('work/' ,views.workKr ,name='workKr'),
+        path('profile/' ,views.profileKr ,name='profileKr'),
+        path('blog/' ,views.blogKr ,name='blogKr')
 ]

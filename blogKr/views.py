@@ -3,16 +3,16 @@ from .models import PostKR
 
 # Create your views here.
 
-def index(request):
-    return render(request, 'blog/index.html')
+def indexKr(request):
+    return render(request, 'blogKr/indexKr.html')
 
-def work(request):
-    return render(request, 'blog/work.html')
+def workKr(request):
+    return render(request, 'blogKr/workKr.html')
 
-def profile(request):
-    return render(request, 'blog/profile.html')
+def profileKr(request):
+    return render(request, 'blogKr/profileKr.html')
 
-def blog(request):
+def blogKr(request):
     latest_post = PostKR.objects.order_by('-pub_date')[:5]
     context = {'latest_post':latest_post}
-    return render(request, 'blog/blog.html',context)
+    return render(request, 'blogKr/blogKr.html',context)

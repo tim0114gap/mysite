@@ -5,15 +5,15 @@
 <body id="index">
 <header>
 	<div class="logo">
-		<a href="{% url 'blogKr:index' %}"><img src="{% static 'blog/images/logo.png' %}" alt="TIM"></a>
+		<a href="{% url 'blogKr:indexKr' %}"><img src="{% static 'blog/images/logo.png' %}" alt="TIM"></a>
 	</div>
 	<nav>
 		<ul class="global-nav">
 			<li><a href="{% url 'blog:index' %}">JP</a></li>
-			<li><a href="{% url 'blogKr:index' %}">KR</a></li>
-			<li><a href="{% url 'blogKr:work' %}">Work</a></li>
-			<li><a href="{% url 'blogKr:profile' %}">Profile</a></li>
-			<li><a href="{% url 'blogKr:blog' %}">Blog</a></li>
+			<li><a href="{% url 'blogKr:indexKr' %}">KR</a></li>
+			<li><a href="{% url 'blogKr:workKr' %}">Work</a></li>
+			<li><a href="{% url 'blogKr:profileKr' %}">Profile</a></li>
+			<li><a href="{% url 'blogKr:blogKr' %}">Blog</a></li>
 		</ul>
 	</nav>
 </header>
@@ -21,7 +21,7 @@
 		<div class="content">
 			<h1>Try Everything</h1>
 			<p>This site is portfolio of Munesato Tanaka</p>
-			<p class="btn"><a href="{% url 'blogKr:work' %}">Work</a></p>
+			<p class="btn"><a href="{% url 'blogKr:workKr' %}">Work</a></p>
 		</div>
 	</div>
 	<footer>
