@@ -25,8 +25,8 @@ webencodings==0.5.1
 whitenoise==4.1.2  
 
 # Usage
-ポートフォリオの公開
-adminからblogを公開
+Released my Portfolio  
+Uploade blog from admin
 
 # License
 None
